@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoo Keoung Oh</title>
+
+    <!-- homepage icon -->
+    <link rel="stylesheet" href="/css/animation.css" />
+    <link rel="icon" type="image/svg" href="images/logo-icon.svg" />
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/about.css" />
+  </head>
+  <body>
+    <header class="primary-header container flex">
+      <div class="navbar__logo">
+        <a href="/index.html"><img src="images/logo.svg" alt="Logo" /></a>
+      </div>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+        <span class="sr-only" aria-expanded="false">Menu</span>
+      </button>
+
+      <nav>
+        <ul
+          id="primary-navigation"
+          class="primary-navigation underline-indicators collaspe flex"
+        >
+          <li class="text-dark fs-400" id="work">
+            <a href="/work.html">Work</a>
+          </li>
+          <li class="text-dark fs-400" id="about">
+            <a href="/about.html">About</a>
+          </li>
+          <li class="text-dark fs-400" id="resume">
+            <a href="/resume.html">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="primary-header__line"></div>
+
+    <main class="container">
+      <div class="main__title">
+        <h1 class="fs-700 fw-600">About.</h1>
+      </div>
+
+      <div class="main__content grid-container--about">
+        <div class="main__profile-img">
+          <img src="/images/profileImage.jpg" alt="Profile Image" />
+        </div>
+
+        <div class="main__profile-text flow">
+          <p>
+            I'm a frontend developer located in Orange. I have a particular
+            passion for creating engaging UI and dynamic user experiences with
+            good accessibility.
+          </p>
+          <p>
+            What excites me most about being part of the Web Development in the
+            tect industry is being able to translate design ideas on paper into
+            a real product. It's very fascinating to create interfaces, a
+            critical bridge between humans and technology.
+          </p>
+
+          <p>
+            For the logo, it simply means my name! The numbers' pronunciation in
+            South Korea is almost the same as my name.
+          </p>
+
+          <p>
+            You can
+            <a href="/work.html" class="highlight">find some of my work here</a
+            >. Take a look and feel free to
+            <a href="" class="highlight">reach out</a>!
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer container flex-row">
+        <p class="footer__copy-right">&copy; / 2022</p>
+      </div>
+    </footer>
+
+    <div
+      class="overlay-msg ff-bodoni fs-900 text-overlay poping overlay-msg--about"
+    >
+      About
+    </div>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoo Keoung Oh</title>
+
+    <!-- homepage icon -->
+    <link rel="stylesheet" href="/css/animation.css" />
+    <link rel="icon" type="image/svg" href="images/logo-icon.svg" />
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/work.css" />
+  </head>
+  <body>
+    <header class="primary-header container flex">
+      <div class="navbar__logo">
+        <a href="/index.html"><img src="images/logo.svg" alt="Logo" /></a>
+      </div>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+        <span class="sr-only" aria-expanded="false">Menu</span>
+      </button>
+
+      <nav>
+        <ul
+          id="primary-navigation"
+          class="primary-navigation underline-indicators collaspe flex"
+        >
+          <li class="text-dark fs-400" id="work">
+            <a href="/work.html">Work</a>
+          </li>
+          <li class="text-dark fs-400" id="about">
+            <a href="/about.html">About</a>
+          </li>
+          <li class="text-dark fs-400" id="resume">
+            <a href="/resume.html">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="primary-header__line"></div>
+
+    <main class="container">
+      <div class="main__title">
+        <h1 class="fs-700 fw-600">Work.</h1>
+      </div>
+
+      <div class="main__project-board grid">
+        <article class="project" id="galleria" data-index-number="0">
+          <p class="project__title text-white">Galleria</p>
+          <img
+            class="project__thumbnail freezeframe"
+            src="./work-project/galleria/preview.gif"
+            alt="IP Tracker Preview"
+          />
+          <div class="project__tag-row flex">
+            <p class="tag bg-gray fs-300">HTML</p>
+            <p class="tag bg-gray fs-300">CSS</p>
+            <p class="tag bg-gray fs-300">Javascript</p>
+            <p class="tag bg-gray fs-300">JQuery</p>
+          </div>
+        </article>
+        <article class="project" id="ip-address-tracker" data-index-number="1">
+          <p class="project__title text-white">IP Tracker</p>
+          <img
+            class="project__thumbnail freezeframe"
+            src="./work-project/ip-address-tracker/preview.gif"
+            alt="IP Tracker Preview"
+          />
+          <div class="project__tag-row flex">
+            <p class="tag bg-gray fs-300">HTML</p>
+            <p class="tag bg-gray fs-300">CSS</p>
+            <p class="tag bg-gray fs-300">Javascript</p>
+            <p class="tag bg-gray fs-300">API</p>
+          </div>
+        </article>
+        <article class="project" id="tic-tac-toe" data-index-number="2">
+          <p class="project__title text-white">Tic Tac Toe</p>
+          <img
+            class="project__thumbnail"
+            src="/work-project/tic-tac-toe/preview.gif"
+            alt=""
+          />
+          <div class="project__tag-row flex">
+            <p class="tag bg-gray fs-300">HTML</p>
+            <p class="tag bg-gray fs-300">CSS</p>
+            <p class="tag bg-gray fs-300">Javascript</p>
+          </div>
+        </article>
+        <article class="project" id="ant" data-index-number="3">
+          <p class="project__title text-white">
+            Kneron Auto Notify Tailgatiing (ANT)
+          </p>
+          <!-- <img
+            class="project__thumbnail freezeframe"
+            src="/work-project/ant/preview.gif"
+            alt="ANT/ will be up soon"
+          /> -->
+          <div class="project__tag-row flex">
+            <p class="tag bg-gray fs-300">React</p>
+            <p class="tag bg-gray fs-300">MongoDB</p>
+            <p class="tag bg-gray fs-300">Javascript</p>
+          </div>
+        </article>
+        <article class="project" id="youtube-clone" data-index-number="4">
+          <p class="project__title text-white">Youtube Clone</p>
+          <img
+            class="project__thumbnail freezeframe"
+            src="/work-project/youtube-clone/preview.gif"
+            alt=""
+          />
+          <div class="project__tag-row flex">
+            <p class="tag bg-gray fs-300">HTML</p>
+            <p class="tag bg-gray fs-300">CSS</p>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <div class="modal__overlay bg-overlay--p"></div>
+
+    <section id="modal" class="modal flow bg-white" data-visible="false">
+      <p>
+        <a
+          href="#"
+          class="modal__btn modal__btn--close fs-300 text-gray spacing-1 uppercase"
+          >close</a
+        >
+      </p>
+
+      <h3 class="modal__title fs-500 fw-500 capitalize">tic tac toe</h3>
+      <div class="modal__thumbnail">
+        <img src="./work-project/tic-tac-toe/preview.gif" alt="" />
+      </div>
+      <div class="modal__tags flex">
+        <p class="text-purple fw-600 fs-300">Used Technology</p>
+        <div class="modal__tag-row flex"></div>
+      </div>
+      <div class="modal__btns flex">
+        <p>
+          <a href="#" target="_blank" class="btn spacing-1 uppercase modal__btn"
+            >visit site</a
+          >
+        </p>
+        <!-- <p>
+          <a
+            href="#"
+            target="_blank"
+            class="modal__btn modal__btn--code uppercase"
+            >View Code</a
+          >
+        </p> -->
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer container flex-row">
+        <p class="footer__copy-right">&copy; / 2022</p>
+      </div>
+    </footer>
+
+    <div
+      class="overlay-msg ff-bodoni fs-900 text-overlay poping overlay-msg--work"
+    >
+      Work
+    </div>
+
+    <script src="https://unpkg.com/freezeframe/dist/freezeframe.min.js"></script>
+    <script src="freezeframe.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

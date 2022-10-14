@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;600&display=swap");
+/* main {
+  min-height: 88vh;
+} */
+
+.grid-container--about {
+  display: grid;
+  gap: var(--gap, 2.5rem);
+}
+
+@media (min-width: 68.75em) {
+  .grid-container--about {
+    grid-template-columns: clamp(15rem, 12.5rem + 10vw, 20rem) 1fr;
+  }
+}
+
+@media (max-width: 68.749em) {
+  .main__profile-img {
+    width: clamp(12.5rem, 10rem + 16vw, 20rem);
+    aspect-ratio: 1;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+}
+
+.main__profile-text.flow {
+  --flow-space: 1.5em;
+}
+
+.overlay-msg--about {
+  bottom: -8%;
+  right: 0;
+}
