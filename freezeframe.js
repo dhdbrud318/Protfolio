@@ -1,4 +1,4 @@
-const p1 = new Freezeframe("#galleria", {
+const p1 = new Freezeframe("#galleria-slideshow-site", {
   trigger: false,
 });
 const p2 = new Freezeframe("#ip-address-tracker", {
