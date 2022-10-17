@@ -34,7 +34,14 @@ Project.prototype.gitPath = function (endpoint = "") {
 };
 
 const data = [
-  new Project("galleria", "Galleria", "HTML", "CSS", "Javascript", "JQuery"),
+  new Project(
+    "galleria-slideshow-site",
+    "Galleria",
+    "HTML",
+    "CSS",
+    "Javascript",
+    "JQuery"
+  ),
   new Project(
     "ip-address-tracker",
     "IP Address Tracker",
