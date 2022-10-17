@@ -75,6 +75,11 @@ modalCloseBtn.addEventListener("click", () => {
   modalOverlay.classList.toggle("active");
 });
 
+modalOverlay.addEventListener("click", () => {
+  modal.setAttribute("data-visible", false);
+  modalOverlay.classList.toggle("active");
+});
+
 projects.forEach((p, index) => {
   p.addEventListener("mouseenter", () => {
     frames[index].start();
