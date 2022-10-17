@@ -21,10 +21,6 @@ Project.prototype.previewGifPath = function () {
   return `./work-project/${this.id}/preview.gif`;
 };
 
-Project.prototype.previewImgPath = function () {
-  return `./work-project/${this.id}/preview.png`;
-};
-
 Project.prototype.sitePath = function (endpoint = "master") {
   return `https://dhdbrud318.github.io/${this.id}/`;
 };
