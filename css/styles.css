@@ -412,24 +412,6 @@ main {
   position: relative;
 }
 
-/* .main__more-btn::after {
-  content: "";
-  position: absolute;
-  height: 0.1rem;
-  background: var(--main-purple);
-  border-radius: 10rem;
-  width: 4rem;
-  left: 0;
-  bottom: calc(-0.3rem);
-  opacity: 0;
-
-  transition: opacity ease-out 0.2s;
-}
-
-.main__more-btn:hover::after {
-  opacity: 1;
-} */
-
 .footer {
   padding: 6.875rem 0;
 }

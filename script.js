@@ -30,14 +30,15 @@ Project.prototype.gitPath = function (endpoint = "") {
 };
 
 const data = [
+  new Project("youtube-clone", "Youtube Clone", "HTML", "CSS"),
   new Project(
-    "galleria-slideshow-site",
-    "Galleria",
-    "HTML",
-    "CSS",
-    "Javascript",
-    "JQuery"
+    "ant",
+    "Kneron Auto Notify aligating (ANT)",
+    "React",
+    "MongoDB",
+    "Javascript"
   ),
+  new Project("tic-tac-toe", "Tic Tac Toe", "HTML", "CSS", "Javascript"),
   new Project(
     "ip-address-tracker",
     "IP Address Tracker",
@@ -46,15 +47,23 @@ const data = [
     "Javascript",
     "API"
   ),
-  new Project("tic-tac-toe", "Tic Tac Toe", "HTML", "CSS", "Javascript"),
   new Project(
-    "ant",
-    "Kneron Auto Notify aligating (ANT)",
-    "React",
-    "MongoDB",
-    "Javascript"
+    "galleria-slideshow-site",
+    "Galleria",
+    "HTML",
+    "CSS",
+    "Javascript",
+    "JQuery"
   ),
-  new Project("youtube-clone", "Youtube Clone", "HTML", "CSS"),
+
+  new Project(
+    "ecommerce-product-page-main",
+    "Sneakers Ecommerce Product Page",
+    "HTML",
+    "CSS",
+    "Javascript",
+    "JQuery"
+  ),
 ];
 
 navToggle.addEventListener("click", () => {
