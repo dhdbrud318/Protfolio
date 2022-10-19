@@ -27,9 +27,9 @@
 
   /* Font size */
   --fs-900: clamp(6rem, 15vw + 1rem, 11rem);
-  --fs-800: clamp(1.5rem, 5vw + 1rem, 4rem);
-  --fs-700: 3rem;
-  --fs-600: 2.5rem;
+  --fs-800: clamp(1.25rem, 2vw + 1rem, 4rem);
+  --fs-700: 2.5rem;
+  --fs-600: 2rem;
   --fs-500: 1.75rem;
   --fs-400: 1rem;
   --fs-300: 0.75rem;
@@ -47,9 +47,6 @@
   /* letter Spacing */
   --spacing-2: 4px;
   --spacing-1: 2.5px;
-}
-
-@media (min-width: 35em) {
 }
 
 @media (min-width: 45em) {
@@ -132,6 +129,12 @@ p {
   width: 70%;
   max-width: 1008px;
   margin-inline: auto;
+}
+
+@media (max-width: 35em) {
+  .container {
+    width: 80vw;
+  }
 }
 
 .sr-only {
@@ -251,6 +254,12 @@ p {
 .fs-700,
 .fs-600 {
   line-height: 1.2;
+}
+
+@media (max-width: 45em) {
+  .fs-800 {
+    line-height: 2;
+  }
 }
 
 .fw-700 {
@@ -382,11 +391,22 @@ p {
 /* Main Section */
 
 main {
-  padding-top: 5rem;
+  padding-top: 2rem;
+  margin-bottom: 5rem;
 }
 
 .main__title {
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 35em) {
+  main {
+    padding-top: 5rem;
+  }
+
+  .main__title {
+    margin-bottom: 3rem;
+  }
 }
 
 .main__welcome-msg {

@@ -47,16 +47,17 @@
 .project__thumbnail {
   object-fit: cover;
   object-fit: center;
-
   height: 100%;
 }
 
-.project__tag-row {
-  flex-wrap: wrap;
-  position: absolute;
-  z-index: 3;
-  bottom: 8%;
-  left: 8%;
+@media (min-width: 35em) {
+  .project__tag-row {
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 3;
+    bottom: 8%;
+    left: 8%;
+  }
 }
 
 .tag {
