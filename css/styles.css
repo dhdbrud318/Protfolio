@@ -332,7 +332,7 @@ p {
     inset: 0 0 0 20%;
     box-shadow: 0.5em 0 1em 1em rgba(var(--clr-gray), 0.3);
     background: hsl(var(--clr-white));
-    padding: min(5rem, 10vh) 2rem;
+    padding: min(10rem, 18vh) 2rem;
     place-items: center;
     flex-direction: column;
     transform: translateX(100%);
