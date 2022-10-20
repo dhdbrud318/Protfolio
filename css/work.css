@@ -35,8 +35,8 @@
 }
 
 .ff-inactive {
-  width: 124% !important;
-  transform: translateX(-9.66%);
+  width: 120% !important;
+  transform: translateX(-8.5%);
 }
 
 .ff-container.ff-responsive .ff-image,
