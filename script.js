@@ -104,20 +104,26 @@ projects.forEach((p, index) => {
 
 projects.forEach((p) => {
   p.addEventListener("click", () => {
+    const index = parseInt(p.dataset.indexNumber);
     modalOverlay.classList.toggle("active");
     modal.setAttribute("data-visible", true);
-    displayModal(data[parseInt(p.dataset.indexNumber)]);
+    displayModal(data[index], index === 1);
     frames.forEach((f) => f.stop());
   });
 });
 
-function displayModal(project) {
+function displayModal(project, ant) {
   title.innerText = project.title;
   thumbnail.setAttribute("src", project.previewGifPath());
   project.tags.forEach((tag) => {
     generateTag(tag);
   });
-  modalSiteBtn.setAttribute("href", project.sitePath());
+  if (ant)
+    modalSiteBtn.setAttribute(
+      "href",
+      "https://www.figma.com/proto/oIGx2zcECCJKwlsPKrHNxB/SoCal-Pals-x-Kneron?node-id=4%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=4%3A2"
+    );
+  else modalSiteBtn.setAttribute("href", project.sitePath());
 }
 
 function generateTag(title) {
