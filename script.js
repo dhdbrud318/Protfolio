@@ -118,11 +118,7 @@ function displayModal(project, ant) {
   project.tags.forEach((tag) => {
     generateTag(tag);
   });
-  if (ant)
-    modalSiteBtn.setAttribute(
-      "href",
-      "https://www.figma.com/proto/oIGx2zcECCJKwlsPKrHNxB/SoCal-Pals-x-Kneron?node-id=4%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=4%3A2"
-    );
+  if (ant) modalSiteBtn.setAttribute("href", "./work-project/ant/ant.html");
   else modalSiteBtn.setAttribute("href", project.sitePath());
 }
 

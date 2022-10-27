@@ -301,15 +301,18 @@ p {
 }
 
 .primary-header {
+  position: relative;
   background: #fff;
   padding: 2.5rem 0 1.5rem 0;
   justify-content: space-between;
 }
 
-.primary-header__line {
-  height: 1px;
-  width: 100%;
-  background: rgb(var(--clr-gray));
+.primary-header::after {
+  content: "";
+  position: absolute;
+  inset: 100% 0 5px 0;
+
+  border-bottom: 1px solid rgb(var(--clr-gray));
 }
 
 .navbar__toggler {
@@ -395,7 +398,8 @@ main {
   margin-bottom: 5rem;
 }
 
-.main__title {
+.main__title,
+.project__title {
   margin-bottom: 2.5rem;
 }
 
@@ -404,7 +408,8 @@ main {
     padding-top: 5rem;
   }
 
-  .main__title {
+  .main__title,
+  .project__title {
     margin-bottom: 3rem;
   }
 }

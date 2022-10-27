@@ -8,8 +8,209 @@
 
     <link rel="stylesheet" href="../../css/styles.css" />
     <link rel="stylesheet" href="../../css/work.css" />
+    <link rel="stylesheet" href="../../css/project.css" />
   </head>
   <body>
+    <header class="primary-header container flex">
+      <div class="navbar__logo">
+        <a href="/index.html"><img src="../../images/logo.svg" alt="Logo" /></a>
+      </div>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+        <span class="sr-only" aria-expanded="false">Menu</span>
+      </button>
+
+      <nav>
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="primary-navigation underline-indicators collaspe flex"
+        >
+          <li class="text-dark fs-400 active" id="work">
+            <a href="/work.html">Work</a>
+          </li>
+          <li class="text-dark fs-400" id="about">
+            <a href="/about.html">About</a>
+          </li>
+          <li class="text-dark fs-400" id="resume">
+            <a href="/resume.html">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="main__title flex">
+        <h1 class="fs-500 fw-500">Kneron Auto Notify Taligating (ANT).</h1>
+        <div class="project__position">
+          <p>UI Designer</p>
+          <p>Frontend Developer</p>
+        </div>
+      </div>
+
+      <div class="project__container flow">
+        <div class="project__content project__content--overview">
+          <h2 class="fs-400 fw-500 text-purple">Overview</h2>
+          <p>
+            Security has always been a big concern in today’s society. The
+            primary goal is to provide cost-saving AI software solutions to
+            fulfill users’ needs regarding the concern of not only security, but
+            also vehicles and other issues. In order to achieve this goal, we
+            will focus on combining the features of Kneron’s previous products
+            into one single solution, making it more efficient and
+            cost-effective.
+          </p>
+        </div>
+        <div class="project__content project__content--objective">
+          <h2 class="fs-400 fw-500 text-purple">Statement of Work</h2>
+          <p>
+            Our overall quantitative goal is to develop a smartphone app using
+            machine learning technology that will identify whether a person
+            entering home has entry access and then either deny or grant entry.
+            The application will be a byproduct of fusing their pre-existing
+            tailgating and face recognition applications which will be
+            integrated to a home assistant and control multiple devices.
+          </p>
+          <p>
+            Given Kneron’s APIs, app components, and data architecture, our team
+            is to integrate their backend into an application for IOS and
+            android. The frontend will be built from scratch to complement the
+            integrated backend, and as long as it meets Kneron’s standard our
+            team is given full jurisdiction over its development.
+          </p>
+          <p>
+            The Kneron backend will use their Kneron cloud, several of their
+            APIs, and other provided applications. Kneron requests that the
+            frontend will be developed primarily on android studio and the
+            backend on linux.
+          </p>
+          <p>
+            Despite the quantitative goal, there is a qualitative focus. Kneron
+            desires that this project serve as a keystone example to inspire
+            future development of fused applications using their marketplace’s
+            component apps.
+          </p>
+        </div>
+
+        <div class="project__content project__content--persona">
+          <h2 class="fs-400 fw-500 text-purple capitalize">persona</h2>
+          <img src="./Persona_1.png" alt="Persona 1" />
+          <img src="./Persona_2.png" alt="Persona 2" />
+          <img src="./Persona_3.png" alt="Persona 3" />
+        </div>
+
+        <div class="project__content project__content--overview">
+          <h2 class="fs-400 fw-500 text-purple">Comparative Analysis</h2>
+          <p>
+            Our team conducted a comparative analysis research to orient the
+            team to the competition and understand the market. Our goals for the
+            research are to:
+          </p>
+          <ol>
+            <li>
+              Figure out at least 3 existing competitors from different
+              categories
+            </li>
+            <li>
+              Comprehend the trends of the security control system using AI
+              technologies
+            </li>
+            <li>
+              Identify current and potential uses of facial recognition
+              technology in the world
+            </li>
+          </ol>
+
+          <a
+            href="https://www.figma.com/proto/c8e865JcfVA6yLFX7IbLcj/comparative-analysis?node-id=2%3A45&scaling=scale-down&page-id=0%3A1"
+            target="_blank"
+          >
+            <figure>
+              <img src="./Competitive analysis.png" alt="Compative Analysis" />
+              <figcaption>
+                To see the analysis table in full size, please click on the
+                image
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="project__content project__content--storyboard">
+          <h2 class="fs-400 fw-500 text-purple capitalize">storyboard</h2>
+          <img src="./storyboard.png" alt="Story Board" />
+        </div>
+
+        <div class="project__content project__content--storyboard">
+          <h2 class="fs-400 fw-500 text-purple capitalize">
+            Generalized Transition Network
+          </h2>
+          <a
+            href="https://www.figma.com/proto/pZOX5Yv4hWXt2041sQtrjn/Transition-Diagram?node-id=2%3A19&scaling=scale-down&page-id=0%3A1"
+          >
+            <figure>
+              <img
+                src="./State Transition Diagram.png"
+                alt="Transition Network"
+              />
+              <figcaption>
+                To see the diagram in full size, click on the image above
+              </figcaption>
+            </figure>
+          </a>
+
+          <p>
+            The diagram above describes all the states that our proposed system
+            will have. Based upon the system’s main features and functions, the
+            diagram is divided into 4 parts; Login, Manage Authorized Users, Log
+            Check, and Activity Recognition and Update, respectively. Every part
+            interacts with each other within the system, as described in the
+            bridges between boxes. They could be in a certain relationship, for
+            example, the login process is the prerequisite for the user
+            authorization step.
+          </p>
+          <p>
+            The term “state” refers to a visual representation that depicts the
+            interaction between the UI components based on user actions. The
+            block boxes indicate the User Interfaces, such as the Login and
+            Homepage, and the arrows connected to each UI show possible user
+            scenarios and their following outcomes, especially for how the
+            system reacts towards each user input type. The boxes with an “X”
+            mark at the top left corner represent event handlers, in this case,
+            either confirmation or warning, that prompts users’ certain
+            attention or awareness in terms of error prevention and recovery.
+          </p>
+        </div>
+
+        <div class="project__content project__content--wireframes">
+          <h2 class="fs-400 fw-500 text-purple capitalize">Wireframes</h2>
+          <iframe
+            style="border: 1px solid rgba(0, 0, 0, 0.1)"
+            width="100%"
+            height="500"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FoIGx2zcECCJKwlsPKrHNxB%2FSoCal-Pals-x-Kneron%3Fnode-id%3D4%253A2%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D4%253A2"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="project__content project__content--showcase">
+          <h2 class="fs-400 fw-500 text-purple capitalize">Showcase</h2>
+          <img src="./poster.png" alt="Showcase Poster" />
+          <video width="100%">
+            <source src="./showcase.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer container flex-row">
+        <p class="footer__copy-right">&copy; / 2022</p>
+      </div>
+    </footer>
+
+    <div
+      class="overlay-msg ff-bodoni fs-900 text-overlay poping overlay-msg--work"
+    >
+      Work
+    </div>
     <script src="../../script.js"></script>
   </body>
 </html>
