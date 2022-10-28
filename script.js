@@ -121,7 +121,10 @@ function displayModal(project, ant) {
   if (ant) {
     modalSiteBtn.setAttribute("target", "_self");
     modalSiteBtn.setAttribute("href", "./work-project/ant/ant.html");
-  } else modalSiteBtn.setAttribute("href", project.sitePath());
+  } else {
+    modalSiteBtn.setAttribute("target", "_blank");
+    modalSiteBtn.setAttribute("href", project.sitePath());
+  }
 }
 
 function generateTag(title) {
