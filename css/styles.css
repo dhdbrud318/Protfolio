@@ -311,7 +311,6 @@ p {
   content: "";
   position: absolute;
   inset: 100% 0 5px 0;
-
   border-bottom: 1px solid rgb(var(--clr-gray));
 }
 
@@ -398,8 +397,7 @@ main {
   margin-bottom: 5rem;
 }
 
-.main__title,
-.project__title {
+.main__title {
   margin-bottom: 2.5rem;
 }
 
@@ -408,8 +406,7 @@ main {
     padding-top: 5rem;
   }
 
-  .main__title,
-  .project__title {
+  .main__title {
     margin-bottom: 3rem;
   }
 }
