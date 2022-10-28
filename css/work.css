@@ -103,8 +103,8 @@
 
 @media (min-width: 45em) {
   .modal {
-    right: -45%;
-    width: 45%;
+    right: -65%;
+    width: 65%;
   }
 
   .modal__overlay.active {
@@ -129,6 +129,13 @@
 
 .modal__btn--close:hover {
   color: hsl(var(--clr-purple));
+}
+
+@media (min-width: 55em) {
+  .modal {
+    right: -45%;
+    width: 45%;
+  }
 }
 
 @keyframes pop-up {
