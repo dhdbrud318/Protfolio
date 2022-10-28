@@ -118,8 +118,10 @@ function displayModal(project, ant) {
   project.tags.forEach((tag) => {
     generateTag(tag);
   });
-  if (ant) modalSiteBtn.setAttribute("href", "./work-project/ant/ant.html");
-  else modalSiteBtn.setAttribute("href", project.sitePath());
+  if (ant) {
+    modalSiteBtn.setAttribute("target", "_self");
+    modalSiteBtn.setAttribute("href", "./work-project/ant/ant.html");
+  } else modalSiteBtn.setAttribute("href", project.sitePath());
 }
 
 function generateTag(title) {
