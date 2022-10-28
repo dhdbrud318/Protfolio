@@ -346,12 +346,13 @@ p {
   }
 
   .mobile-nav-toggle {
+    cursor: pointer;
     display: block;
-    position: absolute;
+    position: fixed;
     z-index: 2000;
-    right: 1rem;
+    right: 10vw;
     top: 2rem;
-    background: transparent;
+    background-color: hsl(var(--clr-white));
     background-image: url(/images/hamburger-menu.svg);
     background-repeat: no-repeat;
     border: 0;
@@ -388,6 +389,23 @@ p {
 .underline-indicators > *:focus,
 .underline-indicators > .active {
   color: hsl(var(--clr-purple));
+}
+
+.jump-to-top {
+  position: fixed;
+  right: 8vw;
+  bottom: 4rem;
+  padding: 1em;
+  background-color: hsl(var(--clr-white));
+  border-radius: 50%;
+  transition: all ease-in-out 0.2s;
+  color: hsl(var(--clr-dark-purple));
+  box-shadow: 0 0 1em 0.5em rgba(var(--clr-gray), 0.3);
+}
+
+.jump-to-top:hover {
+  background-color: hsl(var(--clr-dark-purple));
+  color: hsl(var(--clr-white));
 }
 
 /* Main Section */
