@@ -1,3 +1,6 @@
+const p8 = new Freezeframe("#tip-calculator-app-main", {
+  trigger: false,
+});
 const p6 = new Freezeframe("#ecommerce-product-page-main", {
   trigger: false,
 });
