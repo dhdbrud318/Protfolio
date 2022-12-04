@@ -64,6 +64,13 @@ const data = [
     "Javascript",
     "JQuery"
   ),
+  new Project(
+    "tip-calculator-app-main",
+    "Tip Calculator",
+    "HTML",
+    "CSS",
+    "Javascript"
+  ),
 ];
 
 navToggle.addEventListener("click", () => {
