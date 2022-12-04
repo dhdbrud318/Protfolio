@@ -1,4 +1,4 @@
-const p8 = new Freezeframe("#tip-calculator-app-main", {
+const p7 = new Freezeframe("#tip-calculator-app-main", {
   trigger: false,
 });
 const p6 = new Freezeframe("#ecommerce-product-page-main", {
@@ -20,4 +20,4 @@ const p1 = new Freezeframe("#youtube-clone", {
   trigger: false,
 });
 
-const frames = [p6, p5, p4, p3, p2, p1];
+const frames = [p7, p6, p5, p4, p3, p2, p1];
