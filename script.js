@@ -21,7 +21,7 @@ Project.prototype.previewGifPath = function () {
   return `./work-project/${this.id}/preview.gif`;
 };
 
-Project.prototype.sitePath = function (endpoint = "master") {
+Project.prototype.sitePath = function () {
   return `https://dhdbrud318.github.io/${this.id}/`;
 };
 
@@ -71,6 +71,7 @@ const data = [
     "CSS",
     "Javascript"
   ),
+  new Project("rest-countries", "Country", "React", "Sass", "API"),
 ];
 
 navToggle.addEventListener("click", () => {
