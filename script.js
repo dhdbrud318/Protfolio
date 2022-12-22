@@ -72,6 +72,7 @@ const data = [
     "Javascript"
   ),
   new Project("rest-countries", "Country", "React", "Sass", "API"),
+  new Project("todo-app", "Todo App", "React", "Sass"),
 ];
 
 navToggle.addEventListener("click", () => {

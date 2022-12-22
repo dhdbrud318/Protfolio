@@ -1,3 +1,7 @@
+const p9 = new Freezeframe("#todo-app", {
+  trigger: false,
+});
+
 const p8 = new Freezeframe("#rest-countries", {
   trigger: false,
 });
@@ -24,4 +28,4 @@ const p1 = new Freezeframe("#youtube-clone", {
   trigger: false,
 });
 
-const frames = [p8, p7, p6, p5, p4, p3, p2, p1];
+const frames = [p9, p8, p7, p6, p5, p4, p3, p2, p1];
