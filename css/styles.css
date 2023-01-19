@@ -27,7 +27,7 @@
 
   /* Font size */
   --fs-900: clamp(6rem, 15vw + 1rem, 11rem);
-  --fs-800: clamp(1.25rem, 2vw + 1rem, 4rem);
+  --fs-800: calc(1.5rem + 4vw);
   --fs-700: 2.5rem;
   --fs-600: 2rem;
   --fs-500: 1.75rem;
@@ -52,6 +52,7 @@
 @media (min-width: 45em) {
   :root {
     --fs-700: 3rem;
+    --fs-800: 4rem;
     --fs-600: 2.5rem;
     --fs-500: 1.75rem;
     --fs-400: 1rem;

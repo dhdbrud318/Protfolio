@@ -34,8 +34,8 @@ const data = [
   new Project(
     "ant",
     "Kneron Auto Notify aligating (ANT)",
-    "React",
-    "MongoDB",
+    "React Native",
+    "Django",
     "Javascript"
   ),
   new Project("tic-tac-toe", "Tic Tac Toe", "HTML", "CSS", "Javascript"),
